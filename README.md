@@ -1,10 +1,18 @@
-# 50 professionelle KI-Multi-Task-Workflow-Prompts
+# 50 professionelle KI-Multi-Task-Workflow-Prompts (+ Skills)
 
 50 professionelle, mehrstufige KI-Workflows in zehn Kategorien. Jeder Prompt ist eigenständig nutzbar.
 
+Zusätzlich liegen unter [`skills/`](skills/) **52 strikte Agent-Skills** (je `SKILL.md` + Checklisten + Helper-Scripts), abgeleitet aus allen Prompts inklusive Master- und STRICT-Prompt. Katalog: [`skills/README.md`](skills/README.md).
+
 ## Verwendung
 
-Eine Markdown-Datei aus dem Ordner prompts/ öffnen und den Prompt in eine geeignete KI kopieren. Projektkontext und Berechtigungen ergänzen.
+**Prompt:** Eine Markdown-Datei aus dem Ordner `prompts/` öffnen und in eine geeignete KI kopieren. Projektkontext und Berechtigungen ergänzen.
+
+**Skill:** Ordner unter `skills/<name>/` laden (Claude/Cursor Agent Skill). Shared-Regeln in `skills/_shared/`. Checkpoint:
+
+```bash
+python skills/_shared/scripts/checkpoint.py init --skill <name> --root .skill-runs/<kurz>
+```
 
 ## Inhaltsverzeichnis
 
